@@ -8,7 +8,6 @@ String serverName = "http://worldtimeapi.org/api/timezone/Europe/Zurich.txt";
 
 aaFlipra ww;
 
-
 const uint8_t ziffer[][4] = {
   { 0x7C, 0x82, 0x82, 0x7C },  // 0
   { 0x00, 0x42, 0xFE, 0x02 },  // 1
@@ -21,7 +20,6 @@ const uint8_t ziffer[][4] = {
   { 0x6C, 0x92, 0x92, 0x6C },  // 8
   { 0x70, 0x8A, 0x8A, 0x7C },  // 9
 };
-
 
 String lastTime = "0000";
 
@@ -111,5 +109,4 @@ void loop() {
   drawChar(minute2, 21, zeile1);
 
   lastTime = currentTime;
-  delay(30000);  // Delay for 1 minute before getting the time again
-}
+  delay(30000);
